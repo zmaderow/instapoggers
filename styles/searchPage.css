@@ -1,0 +1,41 @@
+main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem 0;
+    overflow-y: auto;
+}
+
+body {
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+}
+
+
+#postsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.post img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 15px;
+}
+
+#query {
+    border-radius: 15px;
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    padding: 1.2rem 10rem;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--primary);
+    text-align: center;
+    width: 85%;
+}
