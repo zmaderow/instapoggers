@@ -14,6 +14,9 @@ body {
     gap: 3rem;
 }
 
+#mobileNavBar {
+    display: none;
+}
 
 #postsContainer {
     display: flex;
@@ -38,4 +41,128 @@ body {
     color: var(--primary);
     text-align: center;
     width: 85%;
+}
+
+/*Responsividade tablets*/
+@media screen and (min-width: 600px) and (max-width: 995px) {
+
+    #mobileNavBar {
+        width: 100%;
+        position: fixed;
+        width: 100%;
+        height: 6%;
+        background-color: var(--background);
+        bottom: 0rem;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 999;
+        color: var(--primary);
+        left: 0;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    #query {
+        padding: 1.2rem 0;
+        width: 100%;
+    }
+
+    main {
+        width: 95%;
+        height: fit-content;
+        overflow: visible;
+        padding: 0;
+        margin: 3rem auto;
+    }
+
+    #postsContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #postsContainer img {
+        width: 180px;
+        height: 180px;
+    }
+
+    body {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        overflow: auto;
+        height: fit-content;
+        width: 99vw;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        margin-left: 40px;
+    }
+}
+
+/*Responsividade celulares*/
+@media screen and (min-width: 0) and (max-width: 599px) {
+
+    #mobileNavBar {
+        width: 100%;
+        position: fixed;
+        width: 100%;
+        height: 6%;
+        background-color: var(--background);
+        bottom: 0rem;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 999;
+        color: var(--primary);
+        left: 0;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    #query {
+        padding: 1.2rem 0;
+        width: 100%;
+    }
+
+    main {
+        width: 95%;
+        height: fit-content;
+        overflow: visible;
+        padding: 0;
+        margin: 3rem auto;
+    }
+
+    #postsContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #postsContainer img {
+        width: 130px;
+        height: 130px;
+    }
+
+    body {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        overflow: auto;
+        height: fit-content;
+        width: 99vw;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        margin-left: 40px;
+    }
 }

@@ -130,6 +130,8 @@ main {
         justify-content: space-around;
         align-items: center;
         z-index: 999;
+        color: var(--primary);
+        left: 0;
     }
 
     #navBar {
@@ -218,6 +220,7 @@ main {
         align-items: center;
         z-index: 999;
         color: var(--primary);
+        left: 0;
     }
 
     #navBar {

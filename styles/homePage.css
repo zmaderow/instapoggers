@@ -89,7 +89,7 @@ main {
 .postContent {
     display: flex;
     flex-direction: column;
-    gap: .7rem;
+    gap: .9rem;
     flex-wrap: nowrap;
 }
 
@@ -101,9 +101,23 @@ main {
     margin-top: .4rem;
 }
 
+.postDescription {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
 .postInteractions i {
     font-size: 20px;
     font-weight: 100;
+}
+
+.postInteractions {
+    display: flex;
+    gap: 1.3rem;
 }
 
 .viewComments {
@@ -113,7 +127,7 @@ main {
 
 
 aside {
-    width: 18%;
+    width: 20%;
     background-color: var(--panels);
     border-radius: 15px;
 }
@@ -162,8 +176,8 @@ aside {
 
 /*Responsividade tablets*/
 @media screen and (min-width: 600px) and (max-width: 995px) {
-    aside {
-        display: flex;
+    #newPost {
+        padding: 2rem 0;
     }
 
     #mobileNavBar {
@@ -177,6 +191,9 @@ aside {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        z-index: 999;
+        color: var(--primary);
+        left: 0;
     }
 
     #navBar {
@@ -202,6 +219,7 @@ aside {
 
     aside {
         width: 100%;
+        display: flex;
         /* position: relative; */
         /* top: -100vh; */
     }
@@ -238,8 +256,9 @@ aside {
 
 /*Responsividade celulares*/
 @media screen and (min-width: 0) and (max-width: 599px) {
-    aside {
-        display: flex;
+
+    #newPost {
+        padding: 2rem 0;
     }
 
     #mobileNavBar {
@@ -253,6 +272,9 @@ aside {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        z-index: 999;
+        color: var(--primary);
+        left: 0;
     }
 
     #navBar {
@@ -272,14 +294,14 @@ aside {
     main {
         width: 100%;
         height: fit-content;
-        overflow: auto;
+        overflow: visible;
         padding: 0;
         margin-bottom: 3rem;
     }
 
     aside {
         width: 100%;
-        /* position: relative; */
+        display: flex;
         /* top: -100vh; */
     }
 
@@ -304,6 +326,7 @@ aside {
         gap: 1rem;
         flex-wrap: nowrap;
         overflow: auto;
+        height: fit-content;
     }
 
     ::-webkit-scrollbar {
