@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/scripts/script.js"></script>
+
+    <title>Instapoggers - Login</title>
+    <link rel="stylesheet" href="./assets/styles/globals.css">
+    <link rel="stylesheet" href="./assets/styles/homePage.css">
+
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="onLoad()">
+    <nav id="navBar">
+        <div id="navProfile">
+            <img src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+            <h2>Usuário Teste</h2>
+            <p>@usuarioteste</p>
+        </div>
+        <hr class="navDivisor">
+        <div id="navLinks">
+            <a href="./index.html" class="currentSelected">Home</a>
+            <a href="./assets/pages/search.html">Search</a>
+            <a href="./assets/pages/user.html">Profile</a>
+            <a href="./assets/pages/settings.html">Settings</a>
+        </div>
+    </nav>
+    <nav id="mobileNavBar">
+        <a href=" ./index.html" class="currentSelected"><i class="fa-solid fa-house"></i></a>
+        <a href="./assets/pages/search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="./assets/pages/user.html"><i class="fa-solid fa-user"></i></a>
+        <a href="./assets/pages/settings.html"><i class="fa-solid fa-gear"></i></a>
+    </nav>
+
+    <main>
+        <div id="newPost">
+            <h1>+ New post</h1>
+        </div>
+        <div id="postsContainer">
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="postHeaderUser">
+                        <img
+                            src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                        <div class="postHeaderText">
+                            <h1>Usuário Teste</h1>
+                            <p>@usuarioteste</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="postFollowButton">Follow</p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <div>
+                        <img
+                            src="https://steamuserimages-a.akamaihd.net/ugc/946219132927363978/1CAC60DB56E62592D9047FF95B3E831E99C8EA42/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+                    </div>
+                    <div>
+                        <p class="postDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                            assumenda adipisci
+                            dolores aperiam dignissimos consectetur tenetur hic voluptates in similique fugit pariatur
+                            sequi placeat qui, nihil tempora. Asperiores, omnis harum!
+                        </p>
+                    </div>
+                    <div class="postFooter">
+                        <div class="postInteractions">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-comment"></i>
+                            <i class="fa-solid fa-share-from-square"></i>
+                        </div>
+                        <p>on 4st July 2023</p>
+                    </div>
+                    <h2 class="viewComments"><a>view 231 comments</a></h2>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+    <aside>
+        <div id="asideTitle">
+            <h1>Following</h1>
+        </div>
+        <div id="asideFollowers">
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+            <div class="asideUser">
+                <a href="#">
+                    <img
+                        src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+                    <div class="asideUserInfo">
+                        <h3>Usuário Teste</h3>
+                        <p>@usuarioteste</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </aside>
+</body>
+
+</html>
