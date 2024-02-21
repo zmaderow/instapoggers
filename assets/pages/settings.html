@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/script.js"></script>
+    <title>Instapoggers - Login</title>
+    <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/settingsPage.css">
+
+    <script src="https://kit.fontawesome.com/d7de81155c.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="onLoad()">
+    <nav id="navBar">
+        <div id="navProfile">
+            <img src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg">
+            <h2>Usuário Teste</h2>
+            <p>@usuarioteste</p>
+        </div>
+        <hr class="navDivisor">
+        <div id="navLinks">
+            <a href="../../index.html">Home</a>
+            <a href="./search.html">Search</a>
+            <a href="./user.html">Profile</a>
+            <a href="./settings.html" class="currentSelected">Settings</a>
+        </div>
+    </nav>
+    <nav id="mobileNavBar">
+        <a href=" ../../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="./search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="./user.html"><i class="fa-solid fa-user"></i></a>
+        <a href="./settings.html" class="currentSelected"><i class="fa-solid fa-gear"></i></a>
+    </nav>
+
+    <main>
+        <div id="user">
+            <img src="https://t4.ftcdn.net/jpg/02/17/34/67/360_F_217346796_TSg5VcYjsFxZtIDK6Qdctg3yqAapG7Xa.jpg"
+                alt="user">
+            <div>
+                <input type="text" name="username" id="username" value="Usuário Teste">
+                <input type="text" name="usertag" id="usertag" value="@usuarioteste">
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a
+                    onclick="document.getElementById('themeConfig').style.display = 'none' ? document.getElementById('themeConfig').style.display = 'flex' : document.getElementById('themeConfig').style.display = 'none' ">Tema</a>
+                <div id="themeConfig" style="display: 'none';">
+                    <button onclick="changeTheme('dark')">Dark Theme</button>
+                    <button onclick="changeTheme('white')">White Theme</button>
+                </div>
+            </li>
+            <li>Privacidade</li>
+            <li>Segurança</li>
+            <li>Idioma</li>
+            <li>Notificações</li>
+            <li>Editar perfil</li>
+            <li>Ajuda</li>
+        </ul>
+    </main>
+</body>
+
+</html>

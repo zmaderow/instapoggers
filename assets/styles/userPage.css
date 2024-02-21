@@ -1,0 +1,295 @@
+main {
+    width: 81%;
+    background-color: var(--panels);
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+/* 
+#userBanner {
+    position: relative;
+} */
+
+#userBanner img {
+    width: 100%;
+    height: 10%;
+    z-index: -50;
+    object-fit: cover;
+    opacity: 60%;
+    top: 0;
+    -webkit-mask-image: linear-gradient(to top, transparent 2%, var(--panels));
+    border-radius: 15px;
+}
+
+#mainContent {
+    position: relative;
+    top: -50vh;
+}
+
+.userInfo {
+    position: relative;
+    bottom: 70%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    left: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.userInfo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#userInfoContent {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.userInfoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7rem;
+}
+
+.followButton {
+    border: 2px solid var(--primary);
+    text-align: center;
+    border-radius: 25px;
+    width: fit-content;
+    padding: .6rem 1.2rem;
+}
+
+.userFollowContent {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.userInfoFollow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageSelector p {
+    display: inline;
+    font-size: 20px;
+}
+
+#pageSelector {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 5rem auto;
+    justify-content: center;
+}
+
+
+.post a img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#userPosts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: .7rem;
+    height: 32rem;
+}
+
+#mobileNavBar {
+    display: none;
+}
+
+
+/*Responsividade tablets*/
+@media screen and (min-width: 600px) and (max-width: 995px) {
+    #mobileNavBar {
+        width: 100%;
+        position: fixed;
+        width: 100%;
+        height: 6%;
+        background-color: var(--background);
+        bottom: 0rem;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 999;
+        color: var(--primary);
+        left: 0;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    #navProfile img {
+        display: none;
+    }
+
+    #userBanner img {
+        top: 10rem;
+        width: 98vw;
+        height: 50vh;
+    }
+
+    #userInfoContent img {
+        width: 140px;
+        height: 140px;
+    }
+
+    #userInfoContent {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #mainContent {
+        top: -15rem;
+    }
+
+    #pageSelector {
+        margin: 3rem 0;
+    }
+
+    .userFollowContent {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .userInfo {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    main {
+        height: fit-content;
+        width: 98vw;
+        overflow: auto;
+    }
+
+    #userPosts img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #userPosts {
+        margin: 0 auto;
+        width: 100vw;
+        height: fit-content;
+        gap: .7rem;
+        overflow: visible;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        margin-left: 40px;
+    }
+}
+
+/*Responsividade celulares*/
+@media screen and (min-width: 0) and (max-width: 599px) {
+    #mobileNavBar {
+        width: 100%;
+        position: fixed;
+        width: 100%;
+        height: 6%;
+        background-color: var(--background);
+        bottom: 0rem;
+        font-size: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 999;
+        color: var(--primary);
+        left: 0;
+    }
+
+    #navBar {
+        display: none;
+    }
+
+    #navProfile img {
+        display: none;
+    }
+
+    #userBanner img {
+        top: 10rem;
+        width: 98vw;
+        height: 50vh;
+    }
+
+    #userInfoContent img {
+        width: 140px;
+        height: 140px;
+    }
+
+    #userInfoContent {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #mainContent {
+        top: -30vh;
+    }
+
+    #pageSelector {
+        margin: 3rem 0;
+    }
+
+    .userFollowContent {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .userInfo {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    main {
+        height: fit-content;
+        width: 98vw;
+        overflow: auto;
+    }
+
+    #userPosts img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #userPosts {
+        margin: 0 auto;
+        width: 90%;
+        height: fit-content;
+        gap: .7rem;
+        overflow: visible;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        margin-left: 40px;
+    }
+}
